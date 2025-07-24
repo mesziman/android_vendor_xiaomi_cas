@@ -4661,3 +4661,130 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libhta",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhta.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiai_deblur",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmiai_deblur.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "liblog",
+                "libz",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+cc_prebuilt_library_shared {
+    name: "libsns_registry_skel",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_registry_skel.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+cc_prebuilt_library_shared {
+    name: "libst_soft_isp_calc_exposure_shared",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libst_soft_isp_calc_exposure_shared.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "liblog",
+                "libm",
+                "libc++_shared",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+cc_prebuilt_library_shared {
+    name: "libst_soft_isp_shared",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libst_soft_isp_shared.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "liblog",
+                "libm",
+                "libst_soft_isp_calc_exposure_shared",
+                "libdl",
+                "libc++_shared",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}

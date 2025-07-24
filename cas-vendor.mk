@@ -537,4 +537,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qti.chg_policy \
     sensors.qti \
-    sscrpcd
+    sscrpcd \
+		libhta \
+		libmiai_deblur \
+		libsns_registry_skel \
+    libst_soft_isp_calc_exposure_shared \
+    libst_soft_isp_shared
+
+

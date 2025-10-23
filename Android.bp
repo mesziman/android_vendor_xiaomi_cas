@@ -5,6 +5,7 @@
 soong_namespace {
 	imports: [
 		"vendor/xiaomi/sm8250-common",
+    "vendor/xiaomi/camera",
 		"hardware/qcom-caf/common/libqti-perfd-client",
 		"hardware/xiaomi",
 		"vendor/qcom/opensource/display",
